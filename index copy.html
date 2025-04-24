@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gustavo & Leidys - Invitación de Boda</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Invitación de Boda, Matrimonio Cristiano" name="keywords">
+    <meta content="Invitación a nuestra boda eclesiástica - Gustavo & Leidys" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@700&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-primary: #a9bbaf;
+            --color-secondary: #e7d0b1;
+            --color-tertiary: #deb297;
+            --color-quaternary: #c88d7b;
+            --color-quinary: #896662;
+            
+            /* Tipografía */
+            --font-script: 'Great Vibes', cursive;
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Lato', sans-serif;
+        }
+        
+        /* Estilos de tipografía base */
+        html {
+            font-size: 16px;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+        
+        h1, .h1, .display-1, .display-2, .display-3, .display-4 {
+            font-family: var(--font-script);
+            font-size: 3rem;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+        
+        h2, .h2 {
+            font-family: var(--font-heading);
+            font-size: 2.25rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+        
+        h3, .h3 {
+            font-family: var(--font-heading);
+            font-size: 1.75rem;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 0.8rem;
+        }
+        
+        h4, .h4 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+        
+        h5, .h5 {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+        
+        h6, .h6 {
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        strong, b {
+            font-weight: 700;
+        }
+        
+        em, i {
+            font-style: italic;
+        }
+        
+        .small, small, .caption {
+            font-size: 0.875rem;
+            font-weight: 400;
+            color: #666;
+        }
+        
+        /* Estilos específicos para elementos */
+        .navbar-brand h1 {
+            font-family: var(--font-script);
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        
+        .section-title h1 {
+            font-family: var(--font-script);
+            font-size: 3rem;
+            line-height: 1.2;
+        }
+        
+        .section-title h6 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        
+        /* Estilos para los versículos bíblicos */
+        .bible-verse {
+            background-color: rgba(169, 186, 174, 0.05);
+            padding: 2rem;
+            border: 1px solid rgba(169, 186, 174, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            margin: 2rem 0;
+            position: relative;
+        }
+        
+        .bible-verse::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-family: var(--font-script);
+            font-size: 4rem;
+            color: var(--color-primary);
+            opacity: 0.3;
+        }
+        
+        .bible-verse::after {
+            content: '"';
+            position: absolute;
+            bottom: -40px;
+            right: 20px;
+            font-family: var(--font-script);
+            font-size: 4rem;
+            color: var(--color-primary);
+            opacity: 0.3;
+        }
+        
+        .verse-text {
+            font-family: var(--font-body);
+            font-style: italic;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .verse-reference {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--color-primary);
+            text-align: right;
+            display: block;
+            margin-top: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .countdown-number {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        
+        .countdown-label {
+            font-family: var(--font-body);
+            font-size: 0.875rem;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        
+        /* Correcciones de responsividad */
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            position: relative;
+        }
+        
+        .container-fluid {
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100%;
+            max-width: 100%;
+        }
+        
+        @media (max-width: 375px) {
+            .container {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            
+            .navbar-brand h1 {
+                font-size: 1.5rem;
+            }
+            
+            .display-1 {
+                font-size: 2.5rem;
+            }
+            
+            .display-4 {
+                font-size: 2rem;
+            }
+            
+            .countdown-item {
+                min-width: 60px;
+            }
+            
+            .countdown-number {
+                font-size: 1.8rem;
+            }
+            
+            .gallery-item {
+                margin-bottom: 15px;
+            }
+            
+            .form-control {
+                font-size: 14px;
+            }
+            
+            .btn {
+                padding: 0.5rem 1rem;
+            }
+        }
+        
+        .text-primary {
+            color: var(--color-primary) !important;
+        }
+        
+        .btn-primary {
+            background-color: var(--color-primary);
+            border-color: var(--color-primary);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--color-tertiary);
+            border-color: var(--color-tertiary);
+        }
+        
+        .bg-primary {
+            background-color: var(--color-primary) !important;
+        }
+        
+        .bg-secondary {
+            background-color: var(--color-secondary) !important;
+        }
+        
+        /* Estilos para el navbar */
+        .navbar {
+            background-color: var(--color-primary) !important;
+            min-height: 80px;
+        }
+        
+        .navbar-dark .navbar-nav .nav-link {
+            color: white;
+            font-size: 0.85rem;
+            padding: 0.5rem 0.75rem;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+        
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: var(--color-secondary);
+        }
+        
+        .navbar-brand h1 {
+            font-size: 1.75rem;
+            margin: 0;
+            line-height: 1.2;
+        }
+        
+        @media (max-width: 991.98px) {
+            .navbar-nav {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .navbar-nav .nav-item {
+                margin: 0.25rem;
+            }
+            
+            .navbar-brand h1 {
+                font-size: 1.5rem;
+            }
+            
+            .navbar-dark .navbar-nav .nav-link {
+                font-size: 0.8rem;
+                padding: 0.4rem 0.6rem;
+            }
+        }
+        
+        /* Estilos específicos para el contador regresivo */
+        .countdown {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+            flex-wrap: nowrap;
+            gap: 20px;
+        }
+        
+        .countdown-item {
+            text-align: center;
+            min-width: 80px;
+        }
+        
+        .countdown-number {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 2.5rem;
+            line-height: 1.2;
+            color: var(--color-primary);
+            margin-bottom: 5px;
+        }
+        
+        .countdown-label {
+            font-family: var(--font-body);
+            font-size: 0.875rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: var(--color-tertiary);
+        }
+        
+        @media (max-width: 576px) {
+            .countdown {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            
+            .countdown-item {
+                min-width: 60px;
+            }
+            
+            .countdown-number {
+                font-size: 2rem;
+            }
+            
+            .countdown-label {
+                font-size: 0.75rem;
+            }
+        }
+        
+        /* Estilos para las cajas de regalos */
+        .gift-box {
+            background-color: #fff;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(169, 186, 174, 0.15);
+            transition: all 0.4s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .gift-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+            opacity: 0.7;
+        }
+        
+        .gift-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gift-icon {
+            margin-bottom: 1.5rem;
+            transition: all 0.4s ease;
+        }
+        
+        .gift-box:hover .gift-icon {
+            transform: scale(1.1);
+        }
+        
+        .gift-description {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        
+        .gift-details {
+            background-color: rgba(169, 186, 174, 0.05);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid rgba(169, 186, 174, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .gift-box:hover .gift-details {
+            background-color: rgba(169, 186, 174, 0.08);
+        }
+        
+        .gift-details p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+        
+        .gift-details strong {
+            color: var(--color-primary);
+        }
+        
+        @media (max-width: 768px) {
+            .gift-box {
+                padding: 2rem;
+            }
+        }
+
+        /* Estilos para la sección de información útil */
+        .info-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(169, 186, 174, 0.15);
+            height: 100%;
+            transition: all 0.4s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-card-header {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            color: white;
+            padding: 1.5rem;
+            border-radius: 15px 15px 0 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .info-card-header i {
+            font-size: 1.5rem;
+        }
+
+        .info-card-header h5 {
+            margin: 0;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .info-card-body {
+            padding: 2rem;
+        }
+
+        .info-description {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-details {
+            background-color: rgba(169, 186, 174, 0.05);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid rgba(169, 186, 174, 0.1);
+        }
+
+        .info-section {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-icon {
+            color: var(--color-primary);
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .info-content h6 {
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .info-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-list {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+        .info-list li {
+            color: #666;
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-list li::before {
+            content: '•';
+            color: var(--color-primary);
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+            .info-card-body {
+                padding: 1.5rem;
+            }
+
+            .info-section {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .info-icon {
+                text-align: center;
+            }
+        }
+
+        /* Estilos para la sección de corte nupcial */
+        .corte-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .corte-filter {
+            background: none;
+            border: 2px solid var(--color-primary);
+            color: var(--color-primary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .corte-filter:hover,
+        .corte-filter.active {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        .corte-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(169, 186, 174, 0.15);
+            overflow: hidden;
+            transition: all 0.4s ease;
+            height: 100%;
+        }
+
+        .corte-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .corte-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .corte-image img {
+            transition: all 0.4s ease;
+        }
+
+        .corte-card:hover .corte-image img {
+            transform: scale(1.05);
+        }
+
+        .corte-content {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .corte-content h4 {
+            color: var(--color-primary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .corte-role {
+            color: #666;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .corte-social {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .social-link {
+            color: var(--color-primary);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            color: var(--color-secondary);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .corte-filters {
+                flex-wrap: wrap;
+            }
+
+            .corte-filter {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Estilos base para botones */
+        .btn {
+            border-radius: 30px;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            border: 2px solid var(--color-primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--color-primary);
+        }
+
+        .btn-outline-primary {
+            background-color: transparent;
+            border: 2px solid var(--color-primary);
+            color: var(--color-primary);
+        }
+
+        .btn-outline-primary:hover {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        .btn-outline-light {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline-light:hover {
+            background-color: white;
+            color: var(--color-primary);
+        }
+
+        /* Estilos específicos para botones de filtro */
+        .corte-filter {
+            background: none;
+            border: 2px solid var(--color-primary);
+            color: var(--color-primary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .corte-filter:hover,
+        .corte-filter.active {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        /* Estilos para botones de acción */
+        .btn-action {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-action:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Estilos para botones de formulario */
+        .btn-form {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+
+        /* Estilos para botones de redes sociales */
+        .btn-social {
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1.2rem;
+        }
+
+        /* Estilos para botones de navegación */
+        .btn-nav {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            margin: 0 0.5rem;
+        }
+
+        /* Estilos para botones de video */
+        .btn-play {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-primary);
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-play:hover {
+            transform: scale(1.1);
+            background: var(--color-secondary);
+        }
+
+        /* Estilos para botones de regreso al inicio */
+        .back-to-top {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-primary);
+            color: white;
+            border: none;
+            transition: all 0.3s ease;
+            z-index: 99;
+        }
+
+        .back-to-top:hover {
+            background: var(--color-secondary);
+            transform: translateY(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.85rem;
+            }
+
+            .btn-action {
+                padding: 0.8rem 1.6rem;
+            }
+
+            .btn-social {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+            }
+        }
+
+        /* Estilos para los botones del carrusel */
+        .btn-carousel {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--color-primary);
+            border: none;
+            transition: all 0.3s ease;
+            margin: 0 20px;
+        }
+
+        .btn-carousel:hover {
+            background-color: var(--color-secondary);
+            transform: scale(1.1);
+        }
+
+        .btn-carousel i {
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: auto;
+            opacity: 1;
+        }
+
+        .carousel-control-prev {
+            left: 0;
+        }
+
+        .carousel-control-next {
+            right: 0;
+        }
+
+        @media (max-width: 768px) {
+            .btn-carousel {
+                width: 40px;
+                height: 40px;
+                margin: 0 10px;
+            }
+
+            .btn-carousel i {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg navbar-dark py-3 py-lg-2 px-lg-5">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="font-secondary text-white mb-n2">Gustavo <span class="text-primary">&</span> Leidys</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="true">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto py-0">
+                <a href="#inicio" class="nav-item nav-link active">Inicio</a>
+                <a href="#historia" class="nav-item nav-link">Historia</a>
+                <a href="#ceremonia" class="nav-item nav-link">Ceremonia</a>
+                <a href="#versiculos" class="nav-item nav-link">Versículos</a>
+                <a href="#galeria" class="nav-item nav-link">Galería</a>
+            </div>
+            <a href="index.html" class="navbar-brand mx-3 d-none d-lg-block">
+                <h1 class="font-secondary text-white mb-n2">Gustavo <span class="text-primary">&</span> Leidys</h1>
+            </a>
+            <div class="navbar-nav mr-auto py-0">
+                <a href="#rsvp" class="nav-item nav-link">RSVP</a>
+                <a href="#album-compartido" class="nav-item nav-link">Álbum</a>
+                <a href="#regalos" class="nav-item nav-link">Regalos</a>
+                <a href="#info-util" class="nav-item nav-link">Info</a>
+                <a href="#corte-nupcial" class="nav-item nav-link">Corte</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 pb-5" id="inicio">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-1.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Gustavo & Leidys</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Nos casamos bajo la bendición de Dios</h3>
+                            </div>
+                            <button type="button" class="btn-play mx-auto mt-4" data-toggle="modal"
+                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-2.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Gustavo & Leidys</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Únete a nuestra celebración</h3>
+                            </div>
+                            <button type="button" class="btn-play mx-auto mt-4" data-toggle="modal"
+                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-primary btn-carousel">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
+                <div class="btn btn-primary btn-carousel">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Bienvenida Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Bienvenidos</h6>
+                <h1 class="font-secondary display-4">Nos Casamos</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <p class="mb-4 pb-2">Queridos familiares y amigos, con inmensa alegría los invitamos a ser parte de uno de los días más importantes de nuestras vidas. Hemos decidido unir nuestros caminos bajo la bendición de Dios y queremos compartir este momento con ustedes. Su presencia será un regalo invaluable para nosotros.</p>
+                    
+                    <div class="bible-verse">
+                        <p class="verse-text">"El amor es paciente, es bondadoso. El amor no es envidioso ni jactancioso ni orgulloso. No se comporta con rudeza, no es egoísta, no se enoja fácilmente, no guarda rencor. El amor no se deleita en la maldad, sino que se regocija con la verdad. Todo lo disculpa, todo lo cree, todo lo espera, todo lo soporta."</p>
+                        <span class="verse-reference">1 Corintios 13:4-7</span>
+                    </div>
+                    
+                    <h3 class="mt-5 mb-3">Faltan:</h3>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="countdown-days">--</div>
+                            <div class="countdown-label">Días</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="countdown-hours">--</div>
+                            <div class="countdown-label">Horas</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="countdown-minutes">--</div>
+                            <div class="countdown-label">Minutos</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="countdown-seconds">--</div>
+                            <div class="countdown-label">Segundos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bienvenida End -->
+
+
+    <!-- Historia Start -->
+    <div class="container-fluid py-5" id="historia">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Historia</h6>
+                <h1 class="font-secondary display-4">Nuestra Historia de Amor</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="container timeline position-relative p-0">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/story-1.jpg" alt="Primer encuentro de Gustavo y Leidys">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Nuestro Primer Encuentro</h4>
+                            <p class="text-uppercase mb-2">15 Enero 2022</p>
+                            <p class="m-0">Nos conocimos durante un servicio en la iglesia. Desde el primer momento que cruzamos miradas, sentimos que Dios tenía un propósito especial para nosotros. Aquella conversación después del culto marcó el comienzo de algo hermoso.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Primera Cita</h4>
+                            <p class="text-uppercase mb-2">28 Febrero 2022</p>
+                            <p class="m-0">Nuestra primera cita fue en un café cerca de la plaza central. Entre risas y conversaciones profundas, descubrimos cuánto teníamos en común, especialmente nuestra fe y valores. Supimos que había algo especial entre nosotros.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/story-2.jpg" alt="Primera cita de Gustavo y Leidys">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/story-3.jpg" alt="Propuesta de matrimonio">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">La Propuesta</h4>
+                            <p class="text-uppercase mb-2">14 Febrero 2025</p>
+                            <p class="m-0">En un día especial, rodeados de luz de velas y flores, Gustavo se arrodilló y preguntó: "¿Quieres caminar junto a mí para siempre, de la mano de Dios?". Las lágrimas de alegría de Leidys y su "sí" sellaron nuestro compromiso ante Dios.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Compromiso</h4>
+                            <p class="text-uppercase mb-2">28 Marzo 2025</p>
+                            <p class="m-0">Formalizamos nuestro compromiso con la bendición de nuestras familias. Durante una ceremonia íntima, intercambiamos anillos y promesas, confiando en que Dios guiará nuestros pasos hacia una vida juntos llena de amor y fe.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/story-4.jpg" alt="Compromiso de Gustavo y Leidys">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Historia End -->
+
+
+    <!-- Ceremonia Start -->
+    <div class="container-fluid py-5" id="ceremonia">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Ceremonia</h6>
+                <h1 class="font-secondary display-4">Nuestra Unión ante Dios</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h5 class="font-weight-normal text-muted mb-3 pb-3">Con la bendición de Dios y nuestras familias, nos complace invitarlos a ser testigos de nuestra unión en matrimonio.</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 border-right border-primary">
+                    <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
+                        <img class="img-fluid mb-4" src="img/event-1.jpg" alt="Ceremonia religiosa">
+                        <h4 class="mb-3">Ceremonia Religiosa</h4>
+                        <p class="mb-2"><strong>Fecha:</strong> 15 de Noviembre de 2025</p>
+                        <p class="mb-2"><strong>Hora:</strong> 16:00 horas</p>
+                        <p class="mb-2"><strong>Lugar:</strong> Iglesia Cristiana Emanuel</p>
+                        <p class="mb-0"><strong>Dirección:</strong> Av. Principal #123, Ciudad</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center text-md-left ml-md-3">
+                        <img class="img-fluid mb-4" src="img/event-2.jpg" alt="Recepción">
+                        <h4 class="mb-3">Recepción</h4>
+                        <p class="mb-2"><strong>Fecha:</strong> 15 de Noviembre de 2025</p>
+                        <p class="mb-2"><strong>Hora:</strong> 18:00 horas</p>
+                        <p class="mb-2"><strong>Lugar:</strong> Salón de Eventos Jardín del Edén</p>
+                        <p class="mb-0"><strong>Dirección:</strong> Calle Secundaria #456, Ciudad</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h4 class="text-center mb-4">Ubicación</h4>
+                    <div class="map-container">
+                        <!-- Aquí irá el embed de Google Maps -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU0JzE2LjEiTiAxMDHCsDQ4JzIzLjgiVw!5e0!3m2!1ses!2sus!4v1630000000000!5m2!1ses!2sus" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="https://goo.gl/maps/YourGoogleMapsLink" target="_blank" class="btn btn-primary">Obtener Direcciones</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <p class="mb-0">La ceremonia religiosa es para nosotros el momento más importante de nuestra vida juntos. Es el instante en que, delante de Dios, nuestras familias y amigos, uniremos nuestras vidas para siempre. Creemos firmemente que el matrimonio es una institución divina y nos comprometemos a honrarlo cada día de nuestras vidas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ceremonia End -->
+
+    <!-- Versículos Start -->
+    <div class="container-fluid py-5" id="versiculos">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Fundamento Bíblico</h6>
+                <h1 class="font-secondary display-4">La Palabra de Dios en Nuestro Matrimonio</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <p>Deseamos edificar nuestro matrimonio sobre la roca firme que es la Palabra de Dios. Estos versículos son el fundamento espiritual que guiará nuestra vida juntos, recordándonos el diseño divino para el matrimonio y nuestros roles como esposos cristianos.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="bible-verse">
+                        <p class="verse-text">"Y si alguno prevaleciere contra uno, dos le resistirán; y cordón de tres dobleces no se rompe pronto."</p>
+                        <span class="verse-reference">Eclesiastés 4:12</span>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="bible-verse">
+                        <p class="verse-text">"Y ante todo, tened entre vosotros ferviente amor; porque el amor cubrirá multitud de pecados."</p>
+                        <span class="verse-reference">1 Pedro 4:8</span>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mx-auto">
+                    <div class="bible-verse">
+                        <p class="verse-text">"Por tanto, lo que Dios juntó, no lo separe el hombre."</p>
+                        <span class="verse-reference">Marcos 10:9</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Versículos End -->
+
+
+    <!-- Galería Start -->
+    <div class="container-fluid bg-gallery" id="galeria" style="padding: 120px 0; margin: 90px 0;">
+        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Galería</h6>
+            <h1 class="font-secondary display-4 text-white">Nuestros Momentos</h1>
+            <i class="far fa-heart text-white"></i>
+        </div>
+        <div class="owl-carousel gallery-carousel">
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="Gustavo y Leidys en un parque">
+                <a href="img/gallery-1.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-2.jpg" alt="Gustavo y Leidys en la playa">
+                <a href="img/gallery-2.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="Gustavo y Leidys en un atardecer">
+                <a href="img/gallery-3.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="Gustavo y Leidys caminando juntos">
+                <a href="img/gallery-4.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-5.jpg" alt="Gustavo y Leidys en un viaje">
+                <a href="img/gallery-5.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-6.jpg" alt="Gustavo y Leidys en un jardín">
+                <a href="img/gallery-6.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Galería End -->
+
+
+    <!-- RSVP Start -->
+    <div class="container-fluid py-5" id="rsvp">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">RSVP</h6>
+                <h1 class="font-secondary display-4">Confirma tu Asistencia</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-4">
+                        <p>Por favor, confirma tu asistencia antes del 15 de octubre de 2025. Tu presencia hará este día aún más especial para nosotros.</p>
+                </div>
+                    
+                    <!-- Formulario de Google Forms embebido -->
+                    <div class="embed-responsive embed-responsive-16by9 mb-4">
+                        <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true">Cargando formulario...</iframe>
+            </div>
+                    
+                    <!-- Formulario alternativo -->
+                    <div class="text-center">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Nombre Completo"/>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <input type="email" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Correo Electrónico"/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
+                                        <option>Número de Invitados</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
+                                        <option>Asistiré a</option>
+                                        <option>Ceremonia y Recepción</option>
+                                        <option>Solo Ceremonia</option>
+                                        <option>Solo Recepción</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="¿Tienes alguna restricción alimentaria?"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="¿Qué canción te gustaría escuchar en la fiesta?"/>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" placeholder="Mensaje para los novios (opcional)"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Confirmar Asistencia</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <p>Si tienes alguna pregunta, no dudes en contactarnos:</p>
+                        <p><strong>Email:</strong> gustavo.leidys@gmail.com | <strong>Teléfono:</strong> (123) 456-7890</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RSVP End -->
+
+
+    <!-- Álbum Compartido Start -->
+    <div class="container-fluid py-5" id="album-compartido">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Álbum Compartido</h6>
+                <h1 class="font-secondary display-4">Comparte Tus Fotos del Evento</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="shared-album text-center">
+                        <i class="fas fa-camera-retro fa-4x text-primary mb-4"></i>
+                        <h4 class="mb-4">Nuestro Álbum Colaborativo</h4>
+                        <p>Hemos creado un álbum compartido donde podrás subir tus fotos y videos de nuestra boda. Será un hermoso recuerdo tener las imágenes captadas desde la perspectiva de nuestros seres queridos.</p>
+                        
+                        <div class="mt-4 mb-4">
+                            <h5>¿Cómo participar?</h5>
+                            <ol class="text-left">
+                                <li>Haz clic en el botón "Acceder al Álbum" a continuación.</li>
+                                <li>Necesitarás una cuenta de Google para subir fotos.</li>
+                                <li>Sube tus mejores fotos y videos del evento.</li>
+                                <li>¡Comparte los momentos más especiales que capturaste!</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <a href="https://photos.app.goo.gl/TuAlbumCompartido" target="_blank" class="btn btn-primary py-3 px-5">
+                                <i class="fab fa-google mr-2"></i> Acceder al Álbum
+                            </a>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <p class="small text-muted">Nota: Por favor, comparte fotos apropiadas y respetuosas del evento. Nuestro álbum es un espacio para conservar los bellos recuerdos de este día tan especial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Álbum Compartido End -->
+
+    <!-- Mesa de Regalos Start -->
+    <div class="container-fluid py-5" id="regalos">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Mesa de Regalos</h6>
+                <h1 class="font-secondary display-4">Un Detalle Especial</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <p class="mb-5">El regalo más valioso para nosotros será contar con tu presencia en este día tan especial. Sin embargo, si deseas hacernos un obsequio, aquí te dejamos algunas opciones que nos ayudarán a comenzar nuestra vida juntos.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="gift-box">
+                        <div class="gift-icon">
+                            <i class="fas fa-plane-departure fa-3x text-primary mb-4"></i>
+                        </div>
+                        <h4 class="mb-3">Luna de Miel</h4>
+                        <p class="gift-description">Tu contribución nos ayudará a disfrutar de una luna de miel inolvidable donde podamos celebrar el comienzo de nuestra vida matrimonial.</p>
+                        <p class="mb-4">Si deseas contribuir, puedes realizar una transferencia a:</p>
+                        <div class="gift-details">
+                            <p class="mb-1"><strong>Banco:</strong> Banco Nacional</p>
+                            <p class="mb-1"><strong>Titular:</strong> Gustavo Márquez</p>
+                            <p class="mb-1"><strong>Cuenta:</strong> XXXX-XXXX-XXXX-XXXX</p>
+                            <p class="mb-0"><strong>Referencia:</strong> Luna de miel</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="gift-box">
+                        <div class="gift-icon">
+                            <i class="fas fa-home fa-3x text-primary mb-4"></i>
+                        </div>
+                        <h4 class="mb-3">Nuestro Nuevo Hogar</h4>
+                        <p class="gift-description">Estamos comenzando juntos y cualquier aporte nos ayudará a establecer nuestro hogar. Preferimos efectivo en dólares para poder invertir en lo que más necesitemos.</p>
+                        <p class="mb-4">Puedes entregarnos tu detalle el día de la boda o realizar una transferencia a:</p>
+                        <div class="gift-details">
+                            <p class="mb-1"><strong>Banco:</strong> Banco Internacional</p>
+                            <p class="mb-1"><strong>Titular:</strong> Leidys Contreras</p>
+                            <p class="mb-1"><strong>Cuenta:</strong> XXXX-XXXX-XXXX-XXXX</p>
+                            <p class="mb-0"><strong>Referencia:</strong> Nuevo hogar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center mt-3">
+                <div class="col-lg-8 text-center">
+                    <p class="text-muted">Recuerda que lo más importante para nosotros es contar con tu presencia y cariño en este día tan especial. ¡Gracias por ser parte de nuestra historia!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mesa de Regalos End -->
+
+    <!-- Información Útil Start -->
+    <div class="container-fluid py-5" id="info-util">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Información Útil</h6>
+                <h1 class="font-secondary display-4">Información para Invitados</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <i class="fas fa-tshirt"></i>
+                            <h5>Código de Vestimenta</h5>
+                        </div>
+                        <div class="info-card-body">
+                            <p class="info-description">Para nuestra ceremonia religiosa y recepción, hemos escogido un código de vestimenta <strong>Semi-Formal</strong>.</p>
+                            <div class="info-details">
+                                <p class="mb-2"><strong>Para caballeros:</strong> Traje formal o pantalón de vestir con camisa y corbata. Colores sobrios como azul marino, gris o negro.</p>
+                                <p class="mb-0"><strong>Para damas:</strong> Vestido cocktail o conjunto elegante. Evitar por favor vestidos blancos/marfil (reservados para la novia) y colores demasiado llamativos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <i class="fas fa-info-circle"></i>
+                            <h5>Información Adicional</h5>
+                        </div>
+                        <div class="info-card-body">
+                            <div class="info-section">
+                                <div class="info-icon">
+                                    <i class="fas fa-parking"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h6>Estacionamiento</h6>
+                                    <p>Habrá estacionamiento disponible tanto en la iglesia como en el salón de eventos. Se contará con servicio de valet parking.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-section">
+                                <div class="info-icon">
+                                    <i class="fas fa-hotel"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h6>Hospedaje</h6>
+                                    <p>Para invitados que vienen de fuera, recomendamos los siguientes hoteles cercanos al lugar del evento:</p>
+                                    <ul class="info-list">
+                                        <li>Hotel Paraíso - a 5 minutos del salón</li>
+                                        <li>Grand Hotel - a 10 minutos del salón</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="info-section">
+                                <div class="info-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h6>Contacto para dudas</h6>
+                                    <p>Para cualquier consulta adicional, puedes contactar a:</p>
+                                    <p class="mb-1"><strong>María (Hermana de la novia):</strong> (123) 456-7890</p>
+                                    <p class="mb-0"><strong>Carlos (Hermano del novio):</strong> (123) 456-7891</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Información Útil End -->
+
+    <!-- Corte Nupcial Start -->
+    <div class="container-fluid py-5" id="corte-nupcial">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Corte Nupcial</h6>
+                <h1 class="font-secondary display-4">Padrinos y Damas de Honor</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <div class="corte-filters">
+                        <button class="corte-filter active" data-filter=".first">Padrinos</button>
+                        <button class="corte-filter" data-filter=".second">Damas de Honor</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="corte-card">
+                        <div class="corte-image">
+                            <img class="img-fluid w-100" src="img/groomsmen-1.jpg" alt="Padrino">
+                        </div>
+                        <div class="corte-content">
+                            <h4 class="mb-2">Miguel Rodríguez</h4>
+                            <p class="corte-role">Mejor Amigo del Novio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="corte-card">
+                        <div class="corte-image">
+                            <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="Dama de honor">
+                        </div>
+                        <div class="corte-content">
+                            <h4 class="mb-2">Ana Martínez</h4>
+                            <p class="corte-role">Mejor Amiga de la Novia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="corte-card">
+                        <div class="corte-image">
+                            <img class="img-fluid w-100" src="img/groomsmen-2.jpg" alt="Padrino">
+                        </div>
+                        <div class="corte-content">
+                            <h4 class="mb-2">Carlos Pérez</h4>
+                            <p class="corte-role">Hermano del Novio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="corte-card">
+                        <div class="corte-image">
+                            <img class="img-fluid w-100" src="img/bridesmaid-2.jpg" alt="Dama de honor">
+                        </div>
+                        <div class="corte-content">
+                            <h4 class="mb-2">María Gómez</h4>
+                            <p class="corte-role">Hermana de la Novia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="corte-card">
+                        <div class="corte-image">
+                            <img class="img-fluid w-100" src="img/groomsmen-3.jpg" alt="Padrino">
+                        </div>
+                        <div class="corte-content">
+                            <h4 class="mb-2">Roberto González</h4>
+                            <p class="corte-role">Primo del Novio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="corte-card">
+                        <div class="corte-image">
+                            <img class="img-fluid w-100" src="img/bridesmaid-3.jpg" alt="Dama de honor">
+                        </div>
+                        <div class="corte-content">
+                            <h4 class="mb-2">Laura Díaz</h4>
+                            <p class="corte-role">Prima de la Novia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Corte Nupcial End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5" id="contact" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-3 text-white">Gracias</h1>
+                <i class="far fa-heart text-white"></i>
+            </div>
+            <p class="text-white mb-4">Gustavo & Leidys | 15 de Noviembre, 2025</p>
+            <p class="text-white mb-4">"Que Dios bendiga nuestra unión"</p>
+            <div class="d-flex justify-content-center py-2">
+                <p class="text-white" href="#">gustavo.leidys@gmail.com</p>
+                <span class="px-3">|</span>
+                <p class="text-white" href="#">(123) 456-7890</p>
+            </div>
+            <p class="m-0">&copy; 2025 Gustavo & Leidys.<br> Diseñado con <i class="far fa-heart text-primary"></i> para nuestro día especial.
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Script personalizado para el contador regresivo -->
+    <script>
+        // Función para inicializar el contador regresivo
+        function iniciarContador() {
+            // Fecha objetivo: 15 de noviembre de 2025 a las 16:00 horas
+            const fechaBoda = new Date("Nov 15, 2025 16:00:00").getTime();
+            
+            // Actualizar el contador cada segundo
+            const contador = setInterval(function() {
+                // Fecha y hora actual
+                const ahora = new Date().getTime();
+                
+                // Diferencia entre la fecha de la boda y la fecha actual
+                const diferencia = fechaBoda - ahora;
+                
+                // Cálculos de tiempo
+                const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+                const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+                const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+                
+                // Actualizar elementos HTML
+                document.getElementById("countdown-days").innerHTML = dias;
+                document.getElementById("countdown-hours").innerHTML = horas;
+                document.getElementById("countdown-minutes").innerHTML = minutos;
+                document.getElementById("countdown-seconds").innerHTML = segundos;
+                
+                // Cuando la fecha llegue
+                if (diferencia < 0) {
+                    clearInterval(contador);
+                    document.getElementById("countdown").innerHTML = "<h3>¡El gran día ha llegado!</h3>";
+                }
+            }, 1000);
+        }
+        
+        // Inicializar el contador cuando la página esté cargada
+        document.addEventListener("DOMContentLoaded", iniciarContador);
+    </script>
+</body>
+
+</html>
