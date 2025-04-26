@@ -24,6 +24,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/gallery-carousel.css" rel="stylesheet">
     
     <style>
         :root {
@@ -1289,7 +1290,7 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/carousel-1.jpg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-1.png" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Gustavo & Leidys</h1>
@@ -1300,7 +1301,7 @@
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/carousel-2.jpg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-2.png" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Gustavo & Leidys</h1>
@@ -1355,7 +1356,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <p class="mb-4 pb-2">Queridos familiares y amigos, con inmensa alegría los invitamos a ser parte de uno de los días más importantes de nuestras vidas. Hemos decidido unir nuestros caminos bajo la bendición de Dios y queremos compartir este momento con ustedes. Su presencia será un regalo invaluable para nosotros.</p>
+                    <p class="mb-4 pb-2">Queridos familiares y amigos, con inmensa alegría los invitamos a ser parte de uno de los días más importantes de nuestras vidas. Hemos decidido unir nuestros caminos bajo la bendición de Dios y nuestros padres. Queremos compartir este momento con ustedes, su presencia será un regalo invaluable para nosotros.</p>
                     
                     <div class="bible-verse">
                         <p class="verse-text">"El amor es paciente, es bondadoso. El amor no es envidioso ni jactancioso ni orgulloso. No se comporta con rudeza, no es egoísta, no se enoja fácilmente, no guarda rencor. El amor no se deleita en la maldad, sino que se regocija con la verdad. Todo lo disculpa, todo lo cree, todo lo espera, todo lo soporta."</p>
@@ -1461,12 +1462,12 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center">
-                    <h5 class="font-weight-normal text-muted mb-3 pb-3">Con la bendición de Dios y nuestras familias, nos complace invitarlos a ser testigos de nuestra unión en matrimonio.</h5>
+                    <h5 class="font-weight-normal text-muted mb-3 pb-3">Bajo la bendición de Dios y nuestros padres, nos complace invitarlos a ser testigos de nuestra unión en matrimonio.</h5>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 border-right border-primary">
-                    <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
+                <div class="col-md-8 mx-auto">
+                    <div class="text-center text-md-center mb-4 mb-md-0">
                         <img class="img-fluid mb-4" src="img/event-1.jpg" alt="Ceremonia religiosa">
                         <h4 class="mb-3">Ceremonia Religiosa</h4>
                         <p class="mb-2"><strong>Fecha:</strong> 15 de Noviembre de 2025</p>
@@ -1475,28 +1476,19 @@
                         <p class="mb-0"><strong>Dirección:</strong> Av. Principal #123, Ciudad</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="text-center text-md-left ml-md-3">
-                        <img class="img-fluid mb-4" src="img/event-2.jpg" alt="Recepción">
-                        <h4 class="mb-3">Recepción</h4>
-                        <p class="mb-2"><strong>Fecha:</strong> 15 de Noviembre de 2025</p>
-                        <p class="mb-2"><strong>Hora:</strong> 18:00 horas</p>
-                        <p class="mb-2"><strong>Lugar:</strong> Salón de Eventos Jardín del Edén</p>
-                        <p class="mb-0"><strong>Dirección:</strong> Calle Secundaria #456, Ciudad</p>
-                    </div>
-                </div>
             </div>
             
             <div class="row mt-5">
                 <div class="col-12">
                     <h4 class="text-center mb-4">Ubicación</h4>
-                    <div class="map-container">
-                        <!-- Aquí irá el embed de Google Maps -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU0JzE2LjEiTiAxMDHCsDQ4JzIzLjgiVw!5e0!3m2!1ses!2sus!4v1630000000000!5m2!1ses!2sus" 
+                    <div class="map-container" style="height: 400px; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.069612234737!2d-63.20566832543609!3d9.760171177116508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c334155b4f95d61%3A0x843d9d74f7ae1d0f!2sHacienda%20Pueblo%20Real!5e0!3m2!1ses!2sve!4v1745628887838!5m2!1ses!2sve" 
                             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                     <div class="text-center mt-3">
-                        <a href="https://goo.gl/maps/YourGoogleMapsLink" target="_blank" class="btn btn-primary">Obtener Direcciones</a>
+                        <a href="https://maps.app.goo.gl/eVzUTEX1oKq7Bp518" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-map-marker-alt mr-2"></i> Obtener Direcciones
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1610,62 +1602,17 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="text-center mb-4">
-                        <p>Por favor, confirma tu asistencia antes del 15 de octubre de 2025. Tu presencia hará este día aún más especial para nosotros.</p>
+                        <p>Por favor, confirma tu asistencia antes del 15 de octubre de 2025, un mes antes de la ceremonia. Tu presencia hará este día aún más especial para nosotros.</p>
                 </div>
                     
                     <!-- Formulario de Google Forms embebido -->
                     <div class="embed-responsive embed-responsive-16by9 mb-4">
-                        <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true">Cargando formulario...</iframe>
-            </div>
-                    
-                    <!-- Formulario alternativo -->
-                    <div class="text-center">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-sm-6">
-                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Nombre Completo"/>
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <input type="email" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Correo Electrónico"/>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-sm-6">
-                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
-                                        <option>Número de Invitados</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
-                                        <option>Asistiré a</option>
-                                        <option>Ceremonia y Recepción</option>
-                                        <option>Solo Ceremonia</option>
-                                        <option>Solo Recepción</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="¿Tienes alguna restricción alimentaria?"/>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="¿Qué canción te gustaría escuchar en la fiesta?"/>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" placeholder="Mensaje para los novios (opcional)"></textarea>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Confirmar Asistencia</button>
-                            </div>
-                        </form>
+                        <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSfvJ0gPS1_zIVvrECbpnNg6TONPOSvfNyK861ilfIZzPPXo8A/viewform?embedded=true">Cargando formulario...</iframe>
                     </div>
                     
                     <div class="text-center mt-4">
                         <p>Si tienes alguna pregunta, no dudes en contactarnos:</p>
-                        <p><strong>Email:</strong> gustavo.leidys@gmail.com | <strong>Teléfono:</strong> (123) 456-7890</p>
+                        <p><strong>Email:</strong> gustavo.leidys@gmail.com | <strong>Teléfono:</strong> +58 412-8783627</p>
                     </div>
                 </div>
             </div>
@@ -1701,7 +1648,7 @@
                         </div>
                         
                         <div class="mt-4">
-                            <a href="https://photos.app.goo.gl/TuAlbumCompartido" target="_blank" class="btn btn-primary py-3 px-5">
+                            <a href="https://photos.app.goo.gl/89o88N7UpprNkxwK6" target="_blank" class="btn btn-primary py-3 px-5">
                                 <i class="fab fa-google mr-2"></i> Acceder al Álbum
                             </a>
                         </div>
@@ -1840,7 +1787,7 @@
                                 <div class="info-content">
                                     <h6>Contacto para dudas</h6>
                                     <p>Para cualquier consulta adicional, puedes contactar a:</p>
-                                    <p class="mb-1"><strong>María (Hermana de la novia):</strong> (123) 456-7890</p>
+                                    <p class="mb-1"><strong>María (Hermana de la novia):</strong> +58 412-8783627</p>
                                     <p class="mb-0"><strong>Carlos (Hermano del novio):</strong> (123) 456-7891</p>
                                 </div>
                             </div>
@@ -1864,12 +1811,12 @@
                 <div class="portfolio-item">
                     <div class="corte-card">
                         <div class="corte-image">
-                            <img class="img-fluid w-100" src="img/groomsmen-1.jpg" alt="Padrino">
+                            <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="Dama de honor">
                         </div>
                         <div class="corte-content">
-                            <h4 class="mb-2">Miguel Rodríguez</h4>
-                            <p class="corte-role">Mejor Amigo del Novio</p>
-                            <h6 class="text-secondary">Padrino</h6>
+                            <h4 class="mb-2">Lexis Ramos</h4>
+                            <p class="corte-role">Hermana de la Novia</p>
+                            <h6 class="text-secondary">Dama de Honor</h6>
                         </div>
                     </div>
                 </div>
@@ -1879,31 +1826,7 @@
                             <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="Dama de honor">
                         </div>
                         <div class="corte-content">
-                            <h4 class="mb-2">Ana Martínez</h4>
-                            <p class="corte-role">Mejor Amiga de la Novia</p>
-                            <h6 class="text-secondary">Dama de Honor</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="corte-card">
-                        <div class="corte-image">
-                            <img class="img-fluid w-100" src="img/groomsmen-2.jpg" alt="Padrino">
-                        </div>
-                        <div class="corte-content">
-                            <h4 class="mb-2">Carlos Pérez</h4>
-                            <p class="corte-role">Hermano del Novio</p>
-                            <h6 class="text-secondary">Padrino</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="corte-card">
-                        <div class="corte-image">
-                            <img class="img-fluid w-100" src="img/bridesmaid-2.jpg" alt="Dama de honor">
-                        </div>
-                        <div class="corte-content">
-                            <h4 class="mb-2">María Gómez</h4>
+                            <h4 class="mb-2">Leudys Ramos</h4>
                             <p class="corte-role">Hermana de la Novia</p>
                             <h6 class="text-secondary">Dama de Honor</h6>
                         </div>
@@ -1912,23 +1835,59 @@
                 <div class="portfolio-item">
                     <div class="corte-card">
                         <div class="corte-image">
-                            <img class="img-fluid w-100" src="img/groomsmen-3.jpg" alt="Padrino">
+                            <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="Dama de honor">
                         </div>
                         <div class="corte-content">
-                            <h4 class="mb-2">Roberto González</h4>
-                            <p class="corte-role">Primo del Novio</p>
-                            <h6 class="text-secondary">Padrino</h6>
+                            <h4 class="mb-2">Claudia Montes</h4>
+                            <p class="corte-role">Hermana en Cristo</p>
+                            <h6 class="text-secondary">Dama de Honor</h6>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="corte-card">
                         <div class="corte-image">
-                            <img class="img-fluid w-100" src="img/bridesmaid-3.jpg" alt="Dama de honor">
+                            <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="Dama de honor">
                         </div>
                         <div class="corte-content">
-                            <h4 class="mb-2">Laura Díaz</h4>
-                            <p class="corte-role">Prima de la Novia</p>
+                            <h4 class="mb-2">Victoria Llovera</h4>
+                            <p class="corte-role">Sobrina de la Novia</p>
+                            <h6 class="text-secondary">Dama de Honor</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="corte-card">
+                        <div class="corte-image">
+                            <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="Dama de honor">
+                        </div>
+                        <div class="corte-content">
+                            <h4 class="mb-2">María Sosa</h4>
+                            <p class="corte-role">Mejor Amiga de la Novia</p>
+                            <h6 class="text-secondary">Dama de Honor</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="corte-card">
+                        <div class="corte-image">
+                            <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="Dama de honor">
+                        </div>
+                        <div class="corte-content">
+                            <h4 class="mb-2">Angely Salazar</h4>
+                            <p class="corte-role">Mejor Amiga de la Novia</p>
+                            <h6 class="text-secondary">Dama de Honor</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="corte-card">
+                        <div class="corte-image">
+                            <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="Dama de honor">
+                        </div>
+                        <div class="corte-content">
+                            <h4 class="mb-2">Sophia Carvajal</h4>
+                            <p class="corte-role">Mejor Amiga del Novio</p>
                             <h6 class="text-secondary">Dama de Honor</h6>
                         </div>
                     </div>
@@ -1977,7 +1936,7 @@
             <div class="d-flex justify-content-center py-2">
                 <p class="text-white" href="#">gustavo.leidys@gmail.com</p>
                 <span class="px-3">|</span>
-                <p class="text-white" href="#">(123) 456-7890</p>
+                <p class="text-white" href="#">+58 412-8783627</p>
             </div>
             <p class="m-0">&copy; 2025 Gustavo & Leidys.<br> Diseñado con <i class="far fa-heart text-primary"></i> para nuestro día especial.
             </p>
