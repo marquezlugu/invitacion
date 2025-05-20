@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Gustavo & Leidys - Invitación de Boda</title>
+    <title>Leidys & Gustavo - Invitación de Boda</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Invitación de Boda, Matrimonio Cristiano" name="keywords">
-    <meta content="Invitación a nuestra boda eclesiástica - Gustavo & Leidys" name="description">
+    <meta content="Invitación a nuestra boda eclesiástica - Leidys & Gustavo" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -28,11 +28,11 @@
     
     <style>
         :root {
-            --color-primary: #a9bbaf;
-            --color-secondary: #e7d0b1;
+            --color-primary: #a9baae;
+            --color-secondary: #e6d0b1;
             --color-tertiary: #deb297;
-            --color-quaternary: #c88d7b;
-            --color-quinary: #896662;
+            --color-quaternary: #c98d7b;
+            --color-quinary: #8a6662;
             
             /* Tipografía */
             --font-script: 'Great Vibes', cursive;
@@ -50,6 +50,7 @@
             font-size: 1rem;
             line-height: 1.6;
             font-weight: 400;
+            color: var(--color-quinary); /* Añadido color de texto principal */
         }
         
         h1, .h1, .display-1, .display-2, .display-3, .display-4 {
@@ -98,6 +99,7 @@
         
         p {
             margin-bottom: 1rem;
+            color: var(--color-quinary); /* Asegurar que todos los párrafos usen el color principal de texto */
         }
         
         strong, b {
@@ -111,7 +113,8 @@
         .small, small, .caption {
             font-size: 0.875rem;
             font-weight: 400;
-            color: #666;
+            color: var(--color-quinary); /* Cambiado de #666 a tono marrón principal */
+            opacity: 0.85; /* Añadido para mantener aspecto ligero */
         }
         
         /* Estilos específicos para elementos */
@@ -133,13 +136,14 @@
             font-size: 1rem;
             text-transform: uppercase;
             letter-spacing: 3px;
+            color: var(--color-primary); /* Cambiado a terracota */
         }
         
         /* Estilos para los versículos bíblicos */
         .bible-verse {
-            background-color: rgba(169, 186, 174, 0.05);
+            background-color: rgba(230, 208, 177, 0.1); /* Usando color-secondary con transparencia */
             padding: 2rem;
-            border: 1px solid rgba(169, 186, 174, 0.2);
+            border: 1px solid rgba(230, 208, 177, 0.3); /* Usando color-secondary con transparencia */
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
             margin: 2rem 0;
@@ -153,7 +157,7 @@
             left: 20px;
             font-family: var(--font-script);
             font-size: 4rem;
-            color: var(--color-primary);
+            color: var(--color-tertiary); /* Cambiado a melocotón para suavizar */
             opacity: 0.3;
         }
         
@@ -164,7 +168,7 @@
             right: 20px;
             font-family: var(--font-script);
             font-size: 4rem;
-            color: var(--color-primary);
+            color: var(--color-tertiary); /* Cambiado a melocotón para suavizar */
             opacity: 0.3;
         }
         
@@ -173,7 +177,7 @@
             font-style: italic;
             font-size: 1.1rem;
             line-height: 1.8;
-            color: #333;
+            color: var(--color-quinary); /* Cambiado de #333 a tono marrón */
             margin-bottom: 1rem;
             position: relative;
             z-index: 1;
@@ -183,7 +187,7 @@
             font-family: var(--font-heading);
             font-weight: 700;
             font-size: 1rem;
-            color: var(--color-primary);
+            color: var(--color-quaternary); /* Cambiado a terracota para destacar */
             text-align: right;
             display: block;
             margin-top: 1rem;
@@ -196,6 +200,8 @@
             font-weight: 700;
             font-size: 2.5rem;
             line-height: 1.2;
+            color: var(--color-primary); /* Cambiado a terracota para destacar */
+            margin-bottom: 5px;
         }
         
         .countdown-label {
@@ -203,6 +209,7 @@
             font-size: 0.875rem;
             font-weight: 400;
             text-transform: uppercase;
+            color: var(--color-quinary); /* Cambiado a marrón */
         }
         
         /* Correcciones de responsividad */
@@ -259,7 +266,7 @@
         }
         
         .text-primary {
-            color: var(--color-primary) !important;
+            color: var(--color-primary) !important; /* Cambiado a terracota */
         }
         
         .btn-primary {
@@ -282,8 +289,9 @@
         
         /* Estilos para el navbar */
         .navbar {
-            background-color: var(--color-primary) !important;
+            background-color: var(--color-primary) !important; /* Restaurado al verde original */
             min-height: 80px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
         }
         
         .navbar-dark .navbar-nav .nav-link {
@@ -295,7 +303,12 @@
         }
         
         .navbar-dark .navbar-nav .nav-link:hover {
-            color: var(--color-secondary);
+            color: var(--color-tertiary); /* Melocotón para hover sobre fondo verde */
+        }
+        
+        .navbar-dark .navbar-nav .nav-link.active {
+            color: var(--color-secondary); /* Beige para enlace activo sobre verde */
+            font-weight: 700;
         }
         
         .navbar-brand h1 {
@@ -345,7 +358,7 @@
             font-weight: 700;
             font-size: 2.5rem;
             line-height: 1.2;
-            color: var(--color-primary);
+            color: var(--color-primary); /* Cambiado a terracota para destacar */
             margin-bottom: 5px;
         }
         
@@ -354,7 +367,7 @@
             font-size: 0.875rem;
             font-weight: 400;
             text-transform: uppercase;
-            color: var(--color-tertiary);
+            color: var(--color-quinary); /* Cambiado a marrón */
         }
         
         @media (max-width: 576px) {
@@ -382,7 +395,7 @@
             padding: 2.5rem;
             border-radius: 15px;
             box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(169, 186, 174, 0.15);
+            border: 1px solid rgba(222, 178, 151, 0.15);
             transition: all 0.4s ease;
             height: 100%;
             position: relative;
@@ -396,7 +409,7 @@
             left: 0;
             width: 100%;
             height: 4px;
-            background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+            background: linear-gradient(90deg, var(--color-quaternary), var(--color-tertiary));
             opacity: 0.7;
         }
         
@@ -408,6 +421,7 @@
         .gift-icon {
             margin-bottom: 1.5rem;
             transition: all 0.4s ease;
+            color: var(--color-quaternary); /* Añadido color para los íconos */
         }
         
         .gift-box:hover .gift-icon {
@@ -415,25 +429,25 @@
         }
         
         .gift-description {
-            color: #666;
+            color: var(--color-quinary);
             line-height: 1.8;
             margin-bottom: 1.5rem;
         }
         
         .gift-details {
-            background-color: rgba(169, 186, 174, 0.05);
+            background-color: rgba(230, 208, 177, 0.1);
             padding: 1.5rem;
             border-radius: 10px;
-            border: 1px solid rgba(169, 186, 174, 0.1);
+            border: 1px solid rgba(230, 208, 177, 0.2);
             transition: all 0.3s ease;
         }
         
         .gift-box:hover .gift-details {
-            background-color: rgba(169, 186, 174, 0.08);
+            background-color: rgba(230, 208, 177, 0.15);
         }
         
         .gift-details p {
-            color: #555;
+            color: var(--color-quinary);
             font-size: 0.95rem;
         }
         
@@ -452,7 +466,7 @@
             background-color: #fff;
             border-radius: 15px;
             box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(169, 186, 174, 0.15);
+            border: 1px solid rgba(222, 178, 151, 0.2); /* Usando color-tertiary */
             height: 100%;
             transition: all 0.4s ease;
         }
@@ -463,7 +477,7 @@
         }
 
         .info-card-header {
-            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            background: linear-gradient(135deg, var(--color-primary), var(--color-tertiary)); /* Cambiado para gradiente terracota a melocotón */
             color: white;
             padding: 1.5rem;
             border-radius: 15px 15px 0 0;
@@ -516,13 +530,13 @@
         }
 
         .info-content h6 {
-            color: var(--color-primary);
+            color: var(--color-primary); /* Cambiado a terracota para títulos secundarios */
             margin-bottom: 0.5rem;
             font-weight: 600;
         }
 
         .info-content p {
-            color: #666;
+            color: var(--color-quinary); /* Consistencia en color de texto */
             line-height: 1.6;
             margin-bottom: 0.5rem;
         }
@@ -534,7 +548,7 @@
         }
 
         .info-list li {
-            color: #666;
+            color: var(--color-quinary); /* Consistencia en color de texto */
             padding-left: 1.5rem;
             position: relative;
             margin-bottom: 0.5rem;
@@ -542,7 +556,7 @@
 
         .info-list li::before {
             content: '•';
-            color: var(--color-primary);
+            color: var(--color-quaternary); /* Cambiado a terracota para marcadores */
             position: absolute;
             left: 0;
         }
@@ -632,7 +646,7 @@
         }
 
         .corte-role {
-            color: #666;
+            color: var(--color-quinary);
             font-size: 0.9rem;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -652,7 +666,7 @@
         }
 
         .social-link:hover {
-            color: var(--color-secondary);
+            color: var(--color-tertiary);
             transform: translateY(-2px);
         }
 
@@ -698,14 +712,14 @@
         }
 
         .btn-primary {
-            background-color: var(--color-primary);
-            border: 2px solid var(--color-primary);
+            background-color: var(--color-quaternary);
+            border: 2px solid var(--color-quaternary);
             color: white;
         }
 
         .btn-primary:hover {
             background-color: transparent;
-            color: var(--color-primary);
+            color: var(--color-quaternary);
         }
 
         .btn-outline-primary {
@@ -753,11 +767,16 @@
             padding: 1rem 2rem;
             font-size: 1rem;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            background-color: var(--color-quaternary); /* Usando terracota para botones CTA */
+            border-color: var(--color-quaternary);
+            color: white;
         }
 
         .btn-action:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            background-color: var(--color-quinary); /* Hover más oscuro */
+            border-color: var(--color-quinary);
         }
 
         /* Estilos para botones de formulario */
@@ -816,7 +835,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: var(--color-primary);
+            background: var(--color-primary); /* Cambiado a terracota */
             color: white;
             border: none;
             transition: all 0.3s ease;
@@ -825,7 +844,7 @@
         }
 
         .back-to-top:hover {
-            background: var(--color-secondary);
+            background: var(--color-tertiary); /* Hover más oscuro */
             transform: translateY(-5px);
             opacity: 1;
         }
@@ -851,14 +870,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: var(--color-primary);
+            background-color: var(--color-primary); /* Cambiado a terracota para botones CTA */
             border: none;
             transition: all 0.3s ease;
             margin: 0 20px;
         }
 
         .btn-carousel:hover {
-            background-color: var(--color-secondary);
+            background-color: var(--color-tertiary); /* Hover más oscuro */
             transform: scale(1.1);
         }
 
@@ -895,7 +914,7 @@
 
         /* Estilos para el botón del navbar */
         .navbar-toggler {
-            border: 2px solid var(--color-primary);
+            border: 2px solid var(--color-tertiary);
             border-radius: 30px;
             padding: 0.5rem 1rem;
             background-color: transparent;
@@ -908,15 +927,11 @@
         }
 
         .navbar-toggler:hover {
-            background-color: var(--color-primary);
-        }
-
-        .navbar-toggler:hover .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            background-color: rgba(222, 178, 151, 0.2);
         }
 
         .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(169, 186, 174, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
 
         @media (max-width: 768px) {
@@ -1026,7 +1041,7 @@
             left: 0;
             top: 0;
             height: 100%;
-            background: var(--color-primary);
+            background: var(--color-primary); /* Cambiado a terracota para elemento destacado */
             border-radius: 2px;
             width: 0%;
             transition: width 0.1s linear;
@@ -1100,7 +1115,7 @@
         }
 
         .btn-control:hover {
-            background: var(--color-secondary);
+            background: var(--color-tertiary);
             transform: scale(1.1);
         }
 
@@ -1122,7 +1137,7 @@
 
         .btn-play-audio:hover {
             transform: scale(1.1);
-            background: var(--color-secondary);
+            background: var(--color-tertiary);
         }
 
         .btn-control i,
@@ -1199,7 +1214,7 @@
 
         /* Estilos para el símbolo & en el título */
         .navbar-brand h1 .text-primary {
-            color: var(--color-secondary) !important;
+            color: var(--color-secondary) !important; /* Cambiado a beige para mejor combinación con el verde */
             font-weight: 700;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
             position: relative;
@@ -1212,6 +1227,69 @@
                 font-size: 0.9em;
             }
         }
+
+        /* Adicionales cambios de color */
+
+        /* Sección de galería en modo oscuro */
+        /*.container-fluid.bg-gallery {
+            background: linear-gradient(rgba(138, 102, 98, 0.9), rgba(138, 102, 98, 0.9)), url(../img/gallery/gallery-bg.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }*/
+
+        /* Estilos para los elementos del carrusel */
+        .carousel-item .carousel-caption h1, 
+        .carousel-item .carousel-caption h3 {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Estilos para los separadores de texto */
+        .carousel-caption .d-inline-block {
+            position: relative;
+        }
+
+        .carousel-caption .d-inline-block::before,
+        .carousel-caption .d-inline-block::after {
+            content: '';
+            height: 1px;
+            background-color: var(--color-secondary);
+            width: 100%;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Estilos para el footer */
+        .container-fluid.bg-dark {
+            background: linear-gradient(rgba(138, 102, 98, 0.95), rgba(138, 102, 98, 0.95)) !important;
+            position: relative;
+        }
+
+        .container-fluid.bg-dark::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--color-quaternary), var(--color-tertiary));
+            opacity: 0.7;
+        }
+
+        .far.fa-heart.text-dark {
+            color: var(--color-primary) !important;
+        }
+
+        /* Ajuste para color de favicon */
+        .far.fa-heart.text-white {
+            color: white !important;
+        }
+
+        /* Background para los fondos de sección secundarios */
+        .bg-secondary {
+            background-color: rgba(230, 208, 177, 0.2) !important;
+        }
     </style>
 </head>
 
@@ -1219,7 +1297,7 @@
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg navbar-dark py-3 py-lg-2 px-lg-5">
         <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="font-secondary text-white mb-n2">Gustavo <span class="text-primary">&</span> Leidys</h1>
+            <h1 class="font-secondary text-white mb-n2">Leidys <span class="text-primary">&</span> Gustavo</h1>
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="true">
             <i class="fas fa-bars"></i>
@@ -1233,7 +1311,7 @@
                 <a href="#galeria" class="nav-item nav-link">Galería</a>
             </div>
             <a href="index.html" class="navbar-brand mx-3 d-none d-lg-block">
-                <h1 class="font-secondary text-white mb-n2">Gustavo <span class="text-primary">&</span> Leidys</h1>
+                <h1 class="font-secondary text-white mb-n2">Leidys <span class="text-primary">&</span> Gustavo</h1>
             </a>
             <div class="navbar-nav mr-auto py-0">
                 <a href="#rsvp" class="nav-item nav-link">RSVP</a>
@@ -1293,7 +1371,7 @@
                     <img class="position-absolute w-100 h-100" src="img/carousel-1.webp" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Gustavo & Leidys</h1>
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Leidys & Gustavo</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
                                 <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Nos casamos bajo la bendición de Dios</h3>
                             </div>
@@ -1304,7 +1382,7 @@
                     <img class="position-absolute w-100 h-100" src="img/carousel-2.webp" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Gustavo & Leidys</h1>
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Leidys & Gustavo</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
                                 <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Únete a nuestra celebración</h3>
                             </div>
@@ -1400,7 +1478,7 @@
             <div class="container timeline position-relative p-0">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3" src="img/story-1.jpg" alt="Primer encuentro de Gustavo y Leidys">
+                        <img class="img-fluid mr-md-3" src="img/story-1.jpg" alt="Primer encuentro de Leidys y Gustavo">
                     </div>
                     <div class="col-md-6 text-center text-md-left">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
@@ -1419,7 +1497,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3" src="img/story-2.jpg" alt="Primera cita de Gustavo y Leidys">
+                        <img class="img-fluid ml-md-3" src="img/story-2.jpg" alt="Primera cita de Leidys y Gustavo">
                     </div>
                 </div>
                 <div class="row">
@@ -1443,7 +1521,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3" src="img/story-4.jpg" alt="Compromiso de Gustavo y Leidys">
+                        <img class="img-fluid ml-md-3" src="img/story-4.jpg" alt="Compromiso de Leidys y Gustavo">
                     </div>
                 </div>
             </div>
@@ -1937,14 +2015,14 @@
                 <h1 class="font-secondary display-3 text-white">Gracias</h1>
                 <i class="far fa-heart text-white"></i>
             </div>
-            <p class="text-white mb-4">Gustavo & Leidys | 15 de Noviembre, 2025</p>
+            <p class="text-white mb-4">Leidys & Gustavo | 15 de Noviembre, 2025</p>
             <p class="text-white mb-4">"Que Dios bendiga nuestra unión"</p>
             <div class="d-flex justify-content-center py-2">
                 <p class="text-white" href="#">gustavo.leidys@gmail.com</p>
                 <span class="px-3">|</span>
                 <p class="text-white" href="#">+58 412-8783627</p>
             </div>
-            <p class="m-0">&copy; 2025 Gustavo & Leidys.<br> Diseñado con <i class="far fa-heart text-primary"></i> para nuestro día especial.
+            <p class="m-0">&copy; 2025 Leidys & Gustavo.<br> Diseñado con <i class="far fa-heart text-primary"></i> para nuestro día especial.
             </p>
         </div>
     </div>
