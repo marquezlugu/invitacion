@@ -139,60 +139,89 @@
             color: var(--color-primary); /* Cambiado a terracota */
         }
         
-        /* Estilos para los versículos bíblicos */
-        .bible-verse {
-            background-color: rgba(230, 208, 177, 0.1); /* Usando color-secondary con transparencia */
-            padding: 2rem;
-            border: 1px solid rgba(230, 208, 177, 0.3); /* Usando color-secondary con transparencia */
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            margin: 2rem 0;
-            position: relative;
-        }
+        /* Estilos para los versículos bíblicos - estilo moderno */        
+        .bible-verse {            
+            background-color: rgba(230, 208, 177, 0.08);            
+            padding: 2.5rem 2rem;            
+            border: 1px solid rgba(230, 208, 177, 0.2);            
+            border-radius: 0.75rem;            
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.03),                         
+            0 4px 6px -2px rgba(0, 0, 0, 0.01);            
+            margin: 2.5rem 0;            
+            position: relative;            
+            overflow: hidden;            
+            transition: all 0.4s ease;        
+        }                
         
-        .bible-verse::before {
-            content: '"';
-            position: absolute;
-            top: -20px;
-            left: 20px;
-            font-family: var(--font-script);
-            font-size: 4rem;
-            color: var(--color-tertiary); /* Cambiado a melocotón para suavizar */
-            opacity: 0.3;
-        }
+        .bible-verse:hover {            
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05),                         
+            0 10px 10px -5px rgba(0, 0, 0, 0.02);            
+            transform: translateY(-2px);            
+            border-color: rgba(230, 208, 177, 0.3);        
+        }  
+
+        .bible-verse::before {           
+            content: '"';            
+            position: absolute;            
+            top: -25px;            
+            left: 20px;            
+            font-family: var(--font-script);            
+            font-size: 5rem;            
+            color: var(--color-tertiary);            
+            opacity: 0.2;            
+            transform: rotate(-5deg);            
+            transition: opacity 0.4s ease;        
+        }             
+
+        .bible-verse:hover::before {            
+            opacity: 0.25;
+                
+        }                
+                
+        .bible-verse::after {           
+            content: '"';            
+            position: absolute;            
+            bottom: -45px;            
+            right: 20px;            
+            font-family: var(--font-script);            
+            font-size: 5rem;            color: var(--color-tertiary);            
+            opacity: 0.2;            transform: rotate(5deg);            
+            transition: opacity 0.4s ease;        
+        }   
+
+        .bible-verse:hover::after {            
+            opacity: 0.25;        
+        }   
+
+        .verse-text {            
+            font-family: var(--font-body);            
+            font-style: italic;            
+            font-size: 1.15rem;            
+            line-height: 1.8;            
+            color: var(--color-quinary);            
+            margin-bottom: 1.25rem;            
+            position: relative;            
+            z-index: 1;            
+            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);        
+        }                
         
-        .bible-verse::after {
-            content: '"';
-            position: absolute;
-            bottom: -40px;
-            right: 20px;
-            font-family: var(--font-script);
-            font-size: 4rem;
-            color: var(--color-tertiary); /* Cambiado a melocotón para suavizar */
-            opacity: 0.3;
-        }
+        .verse-reference {            
+            font-family: var(--font-heading);            
+            font-weight: 700;            
+            font-size: 1rem;            
+            color: var(--color-quaternary);            
+            text-align: right;           
+            display: block;            
+            margin-top: 1.25rem;            
+            position: relative;            
+            z-index: 1;            
+            letter-spacing: 0.02em;            
+            padding-right: 0.5rem;            
+            transition: transform 0.3s ease;        
+        }                
         
-        .verse-text {
-            font-family: var(--font-body);
-            font-style: italic;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: var(--color-quinary); /* Cambiado de #333 a tono marrón */
-            margin-bottom: 1rem;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .verse-reference {
-            font-family: var(--font-heading);
-            font-weight: 700;
-            font-size: 1rem;
-            color: var(--color-quaternary); /* Cambiado a terracota para destacar */
-            text-align: right;
-            display: block;
-            margin-top: 1rem;
-            position: relative;
-            z-index: 1;
+        .bible-verse:hover .verse-reference {            
+            transform: translateX(-5px);        
         }
         
         .countdown-number {
@@ -461,62 +490,79 @@
             }
         }
 
-        /* Estilos para la sección de información útil */
+        /* Estilos para la sección de información útil - estilo moderno */
         .info-card {
             background-color: #fff;
-            border-radius: 15px;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(222, 178, 151, 0.2); /* Usando color-tertiary */
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
             height: 100%;
             transition: all 0.4s ease;
+            border: 1px solid rgba(169, 186, 174, 0.05);
         }
 
         .info-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
 
         .info-card-header {
-            background: linear-gradient(135deg, var(--color-primary), var(--color-tertiary)); /* Cambiado para gradiente terracota a melocotón */
+            background: var(--color-primary);
             color: white;
-            padding: 1.5rem;
-            border-radius: 15px 15px 0 0;
+            padding: 1.25rem 1.5rem;
             display: flex;
             align-items: center;
             gap: 1rem;
+            position: relative;
+        }
+
+        .info-card-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--color-quaternary);
+           /*opacity: 0.7;*/
         }
 
         .info-card-header i {
             font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
         }
 
         .info-card-header h5 {
             margin: 0;
-            font-size: 1.25rem;
             font-weight: 600;
+            font-size: 1.25rem;
+            letter-spacing: 0.01em;
         }
 
         .info-card-body {
-            padding: 2rem;
+            padding: 1.75rem;
         }
 
         .info-description {
-            color: #666;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
+            color: var(--color-quinary);
+            line-height: 1.6;
+            margin-bottom: 1.25rem;
+            font-size: 1rem;
         }
 
         .info-details {
-            background-color: rgba(169, 186, 174, 0.05);
+            background-color: rgba(169, 186, 174, 0.06);
             padding: 1.5rem;
-            border-radius: 10px;
-            border: 1px solid rgba(169, 186, 174, 0.1);
+            border-radius: 0.5rem;
+            border: 1px solid rgba(169, 186, 174, 0.08);
+            margin-top: 0.5rem;
         }
 
         .info-section {
             display: flex;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
+            gap: 1.25rem;
+            margin-bottom: 1.75rem;
+            align-items: flex-start;
         }
 
         .info-section:last-child {
@@ -524,44 +570,68 @@
         }
 
         .info-icon {
+            background-color: rgba(var(--color-primary-rgb), 0.1);
             color: var(--color-primary);
-            font-size: 1.5rem;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
             flex-shrink: 0;
         }
 
+        .info-content {
+            flex: 1;
+        }
+
         .info-content h6 {
-            color: var(--color-primary); /* Cambiado a terracota para títulos secundarios */
+            color: var(--color-primary);
             margin-bottom: 0.5rem;
             font-weight: 600;
+            font-size: 1.1rem;
         }
 
         .info-content p {
-            color: var(--color-quinary); /* Consistencia en color de texto */
-            line-height: 1.6;
+            color: var(--color-quinary);
+            line-height: 1.5;
             margin-bottom: 0.5rem;
+            font-size: 0.95rem;
         }
 
         .info-list {
             list-style: none;
             padding-left: 0;
             margin-bottom: 0;
+            margin-top: 0.5rem;
         }
 
         .info-list li {
-            color: var(--color-quinary); /* Consistencia en color de texto */
+            color: var(--color-quinary);
             padding-left: 1.5rem;
             position: relative;
             margin-bottom: 0.5rem;
+            line-height: 1.5;
+            font-size: 0.95rem;
         }
 
         .info-list li::before {
-            content: '•';
-            color: var(--color-quaternary); /* Cambiado a terracota para marcadores */
+            content: '';
             position: absolute;
             left: 0;
+            top: 0.5rem;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background-color: var(--color-quaternary);
         }
 
         @media (max-width: 768px) {
+            .info-card {
+                margin-bottom: 2rem;
+            }
+            
             .info-card-body {
                 padding: 1.5rem;
             }
@@ -572,62 +642,59 @@
             }
 
             .info-icon {
+                margin: 0 auto 0.5rem;
+            }
+            
+            .info-content h6 {
                 text-align: center;
             }
         }
 
-        /* Estilos para la sección de corte nupcial */
-        .corte-filters {
+        /* Color primario en formato RGB para usar con transparencia */
+        :root {
+            --color-primary-rgb: 169, 186, 174;
+        }
+
+        /* Estilos para la sección de corte nupcial - estilo moderno */
+        .portfolio-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            gap: 1rem;
-            margin-bottom: 2rem;
+            margin: 0 -15px;
         }
 
-        .corte-filter {
-            background: none;
-            border: 2px solid var(--color-primary);
-            color: var(--color-primary);
-            padding: 0.75rem 1.5rem;
-            border-radius: 30px;
-            font-weight: 600;
+        .portfolio-item {
+            width: calc(33.333% - 30px);
+            margin: 0 15px 30px;
             transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .corte-filter:hover,
-        .corte-filter.active {
-            background-color: var(--color-primary);
-            color: white;
         }
 
         .corte-card {
             background-color: #fff;
-            border-radius: 15px;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(169, 186, 174, 0.15);
+            border-radius: 12px;
             overflow: hidden;
-            transition: all 0.4s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             height: 100%;
-            margin-bottom: 30px; /* Añadido margen inferior */
+            transition: all 0.3s ease;
+            border: 1px solid rgba(169, 186, 174, 0.1);
         }
 
         .corte-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
 
         .corte-image {
             position: relative;
             overflow: hidden;
-            height: 300px; /* Altura fija para las imágenes */
+            height: 280px;
         }
 
         .corte-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: all 0.4s ease;
+            transition: transform 0.5s ease;
         }
 
         .corte-card:hover .corte-image img {
@@ -635,69 +702,97 @@
         }
 
         .corte-content {
-            padding: 1.5rem;
+            padding: 20px;
             text-align: center;
+            position: relative;
+        }
+
+        .corte-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(to right, var(--color-primary), var(--color-tertiary));
+            border-radius: 2px;
         }
 
         .corte-content h4 {
             color: var(--color-primary);
+            font-size: 1.25rem;
+            margin-top: 15px;
+            margin-bottom: 8px;
             font-weight: 600;
-            margin-bottom: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .corte-card:hover .corte-content h4 {
+            color: var(--color-quaternary);
         }
 
         .corte-role {
             color: var(--color-quinary);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-bottom: 1rem;
+            margin-bottom: 10px;
+            font-weight: 500;
         }
 
-        .corte-social {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
+        .corte-content h6 {
+            display: inline-block;
+            background-color: rgba(169, 186, 174, 0.1);
+            color: var(--color-quaternary);
+            padding: 4px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-top: 5px;
         }
 
-        .social-link {
-            color: var(--color-primary);
-            font-size: 1.2rem;
-            transition: all 0.3s ease;
-        }
-
-        .social-link:hover {
-            color: var(--color-tertiary);
-            transform: translateY(-2px);
-        }
-
-        /* Estilos para el contenedor de portfolio */
-        .portfolio-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
-        }
-
-        .portfolio-item {
-            width: calc(33.333% - 30px);
-            margin-bottom: 30px;
+        /* Responsive */
+        @media (max-width: 1199px) {
+            .portfolio-item {
+                width: calc(33.333% - 30px);
+            }
         }
 
         @media (max-width: 991px) {
             .portfolio-item {
                 width: calc(50% - 30px);
             }
-        }
-
-        @media (max-width: 576px) {
-            .portfolio-item {
-                width: 100%;
+            
+            .corte-image {
+                height: 260px;
             }
         }
 
-        /* Ocultar elementos no activos */
-        .portfolio-item.hide {
-            display: none;
+        @media (max-width: 767px) {
+            .portfolio-item {
+                width: calc(50% - 20px);
+                margin: 0 10px 20px;
+            }
+            
+            .corte-image {
+                height: 240px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .portfolio-container {
+                margin: 0;
+            }
+            
+            .portfolio-item {
+                width: 100%;
+                margin: 0 0 25px;
+            }
+            
+            .corte-image {
+                height: 280px;
+            }
         }
 
         /* Estilos base para botones */
@@ -1245,24 +1340,14 @@
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
         }
 
-        /* Estilos para los separadores de texto */
+        /* Estilos para los separadores de texto - eliminados pseudo-elementos */
         .carousel-caption .d-inline-block {
             position: relative;
         }
 
-        .carousel-caption .d-inline-block::before,
-        .carousel-caption .d-inline-block::after {
-            content: '';
-            height: 1px;
-            background-color: var(--color-secondary);
-            width: 100%;
-            position: absolute;
-            left: 0;
-        }
-
         /* Estilos para el footer */
         .container-fluid.bg-dark {
-            background: linear-gradient(rgba(138, 102, 98, 0.95), rgba(138, 102, 98, 0.95)) !important;
+            background: var(--color-secondary) !important;
             position: relative;
         }
 
@@ -1273,8 +1358,16 @@
             left: 0;
             width: 100%;
             height: 5px;
-            background: linear-gradient(90deg, var(--color-quaternary), var(--color-tertiary));
-            opacity: 0.7;
+            background: var(--color-quaternary);
+            opacity: 0.9;
+        }
+
+        .footer-text {
+            color: var(--color-quinary);
+        }
+
+        .footer-divider {
+            color: var(--color-quaternary);
         }
 
         .far.fa-heart.text-dark {
@@ -1290,6 +1383,145 @@
         .bg-secondary {
             background-color: rgba(230, 208, 177, 0.2) !important;
         }
+
+        /* Ajustes para el navbar y el logo centrado - reemplazar la sección anterior */
+        .navbar {
+            background-color: var(--color-primary) !important;
+        }
+
+        .navbar-collapse {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand.mx-auto {
+            margin-left: 2rem !important;
+            margin-right: 2rem !important;
+        }
+
+        .navbar-brand h1 {
+            font-size: 1.75rem;
+            margin: 0;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-collapse {
+                flex-direction: column;
+            }
+            
+            .navbar-nav {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+                margin-top: 1rem;
+            }
+            
+            .navbar-nav .nav-item {
+                margin: 0.25rem;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .navbar-nav {
+                width: 35%;
+            }
+            
+            .navbar-nav.ml-auto {
+                justify-content: flex-end;
+            }
+            
+            .navbar-nav.mr-auto {
+                justify-content: flex-start;
+            }
+        }
+
+        /* Estilos para efectos vintage en la galería */
+        .gallery-item {
+            padding: 15px;
+        }
+
+        .vintage-frame {
+            background-color: #ffffff;
+            padding: 12px 12px 12px 12px; /* Más padding en la parte inferior */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            transform: rotate(0deg);
+        }
+
+        .vintage-frame::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            pointer-events: none;
+        }
+
+        .vintage-frame::after {
+            content: '';
+            position: absolute;
+            bottom: 18px;
+            left: 50%;
+            width: 40px;
+            height: 1px;
+            background-color: rgba(0, 0, 0, 0.1);
+            transform: translateX(-50%);
+        }
+
+        .gallery-item:hover .vintage-frame {
+            transform: scale(1.03) rotate(1deg);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .vintage-frame img {
+            width: 100%;
+            transition: all 0.5s ease;
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+
+        .gallery-item a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            cursor: pointer;
+            z-index: 10;
+            opacity: 0;
+        }
+
+        .gallery-item:hover a {
+            opacity: 0; /* Mantener transparente incluso en hover */
+        }
+
+        .owl-carousel .owl-stage-outer {
+            padding: 15px 0;
+        }
+
+        .owl-carousel .owl-nav {
+            position: absolute;
+            width: 135px;
+            height: 60px;
+            top: -90px;
+            left: calc(50% - 67px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1;
+        }
     </style>
 </head>
 
@@ -1302,18 +1534,17 @@
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="true">
             <i class="fas fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-            <div class="navbar-nav ml-auto py-0">
-                <a href="#inicio" class="nav-item nav-link active">Inicio</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mr-auto py-0">
                 <a href="#historia" class="nav-item nav-link">Historia</a>
                 <a href="#ceremonia" class="nav-item nav-link">Ceremonia</a>
                 <a href="#versiculos" class="nav-item nav-link">Versículos</a>
                 <a href="#galeria" class="nav-item nav-link">Galería</a>
             </div>
-            <a href="index.html" class="navbar-brand mx-3 d-none d-lg-block">
+            <a href="#inicio" class="navbar-brand mx-auto d-none d-lg-block">
                 <h1 class="font-secondary text-white mb-n2">Leidys <span class="text-primary">&</span> Gustavo</h1>
             </a>
-            <div class="navbar-nav mr-auto py-0">
+            <div class="navbar-nav ml-auto py-0">
                 <a href="#rsvp" class="nav-item nav-link">RSVP</a>
                 <a href="#album-compartido" class="nav-item nav-link">Álbum</a>
                 <a href="#regalos" class="nav-item nav-link">Regalos</a>
@@ -1629,46 +1860,46 @@
         </div>
         <div class="owl-carousel gallery-carousel">
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="Gustavo y Leidys en un parque">
-                <a href="img/gallery-1.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
+                <div class="vintage-frame">
+                    <img class="img-fluid" src="img/gallery-1.jpg" alt="Gustavo y Leidys en un parque">
+                    <a href="img/gallery-1.jpg" data-lightbox="gallery"></a>
+                </div>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-2.jpg" alt="Gustavo y Leidys en la playa">
-                <a href="img/gallery-2.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
+                <div class="vintage-frame">
+                    <img class="img-fluid" src="img/gallery-2.jpg" alt="Gustavo y Leidys en la playa">
+                    <a href="img/gallery-2.jpg" data-lightbox="gallery"></a>
+                </div>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="Gustavo y Leidys en un atardecer">
-                <a href="img/gallery-3.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
+                <div class="vintage-frame">
+                    <img class="img-fluid" src="img/gallery-3.jpg" alt="Gustavo y Leidys en un atardecer">
+                    <a href="img/gallery-3.jpg" data-lightbox="gallery"></a>
+                </div>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="Gustavo y Leidys caminando juntos">
-                <a href="img/gallery-4.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
+                <div class="vintage-frame">
+                    <img class="img-fluid" src="img/gallery-4.jpg" alt="Gustavo y Leidys caminando juntos">
+                    <a href="img/gallery-4.jpg" data-lightbox="gallery"></a>
+                </div>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-5.jpg" alt="Gustavo y Leidys en un viaje">
-                <a href="img/gallery-5.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
+                <div class="vintage-frame">
+                    <img class="img-fluid" src="img/gallery-5.jpg" alt="Gustavo y Leidys en un viaje">
+                    <a href="img/gallery-5.jpg" data-lightbox="gallery"></a>
+                </div>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-6.jpg" alt="Gustavo y Leidys en un jardín">
-                <a href="img/gallery-6.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
+                <div class="vintage-frame">
+                    <img class="img-fluid" src="img/gallery-6.jpg" alt="Gustavo y Leidys en un jardín">
+                    <a href="img/gallery-6.jpg" data-lightbox="gallery"></a>
+                </div>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-7.jpg" alt="Gustavo y Leidys en un jardín">
-                <a href="img/gallery-7.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
+                <div class="vintage-frame">
+                    <img class="img-fluid" src="img/gallery-7.jpg" alt="Gustavo y Leidys en un jardín">
+                    <a href="img/gallery-7.jpg" data-lightbox="gallery"></a>
+                </div>
             </div>
         </div>
     </div>
@@ -1817,7 +2048,7 @@
             </div>
             
             <div class="row">
-                <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="col-lg-6 mb-4">
                     <div class="info-card">
                         <div class="info-card-header">
                             <i class="fas fa-tshirt"></i>
@@ -1895,84 +2126,84 @@
                 <div class="portfolio-item">
                     <div class="corte-card">
                         <div class="corte-image">
-                            <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="Dama de honor">
+                            <img src="img/bridesmaid-1.jpg" alt="Dama de honor">
                         </div>
                         <div class="corte-content">
-                            <h4 class="mb-2">Lexis Ramos</h4>
+                            <h4>Lexis Ramos</h4>
                             <p class="corte-role">Hermana de la Novia</p>
-                            <h6 class="text-secondary">Dama de Honor</h6>
+                            <h6>Dama de Honor</h6>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="corte-card">
                         <div class="corte-image">
-                            <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="Dama de honor">
+                            <img src="img/bridesmaid-1.jpg" alt="Dama de honor">
                         </div>
                         <div class="corte-content">
-                            <h4 class="mb-2">Leudys Ramos</h4>
+                            <h4>Leudys Ramos</h4>
                             <p class="corte-role">Hermana de la Novia</p>
-                            <h6 class="text-secondary">Dama de Honor</h6>
+                            <h6>Dama de Honor</h6>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="corte-card">
                         <div class="corte-image">
-                            <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="Dama de honor">
+                            <img src="img/bridesmaid-1.jpg" alt="Dama de honor">
                         </div>
                         <div class="corte-content">
-                            <h4 class="mb-2">Claudia Montes</h4>
+                            <h4>Claudia Montes</h4>
                             <p class="corte-role">Hermana en Cristo</p>
-                            <h6 class="text-secondary">Dama de Honor</h6>
+                            <h6>Dama de Honor</h6>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="corte-card">
                         <div class="corte-image">
-                            <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="Dama de honor">
+                            <img src="img/bridesmaid-1.jpg" alt="Dama de honor">
                         </div>
                         <div class="corte-content">
-                            <h4 class="mb-2">Victoria Llovera</h4>
+                            <h4>Victoria Llovera</h4>
                             <p class="corte-role">Sobrina de la Novia</p>
-                            <h6 class="text-secondary">Dama de Honor</h6>
+                            <h6>Dama de Honor</h6>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="corte-card">
                         <div class="corte-image">
-                            <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="Dama de honor">
+                            <img src="img/bridesmaid-1.jpg" alt="Dama de honor">
                         </div>
                         <div class="corte-content">
-                            <h4 class="mb-2">María Sosa</h4>
+                            <h4>María Sosa</h4>
                             <p class="corte-role">Mejor Amiga de la Novia</p>
-                            <h6 class="text-secondary">Dama de Honor</h6>
+                            <h6>Dama de Honor</h6>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="corte-card">
                         <div class="corte-image">
-                            <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="Dama de honor">
+                            <img src="img/bridesmaid-1.jpg" alt="Dama de honor">
                         </div>
                         <div class="corte-content">
-                            <h4 class="mb-2">Angely Salazar</h4>
+                            <h4>Angely Salazar</h4>
                             <p class="corte-role">Mejor Amiga de la Novia</p>
-                            <h6 class="text-secondary">Dama de Honor</h6>
+                            <h6>Dama de Honor</h6>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="corte-card">
                         <div class="corte-image">
-                            <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="Dama de honor">
+                            <img src="img/bridesmaid-1.jpg" alt="Dama de honor">
                         </div>
                         <div class="corte-content">
-                            <h4 class="mb-2">Sophia Carvajal</h4>
+                            <h4>Sophia Carvajal</h4>
                             <p class="corte-role">Mejor Amiga del Novio</p>
-                            <h6 class="text-secondary">Dama de Honor</h6>
+                            <h6>Dama de Honor</h6>
                         </div>
                     </div>
                 </div>
@@ -2012,17 +2243,17 @@
     <div class="container-fluid bg-dark text-white py-5" id="contact" style="margin-top: 90px;">
         <div class="container text-center py-5">
             <div class="section-title position-relative text-center">
-                <h1 class="font-secondary display-3 text-white">Gracias</h1>
-                <i class="far fa-heart text-white"></i>
+                <h1 class="font-secondary display-3 footer-text">Gracias</h1>
+                <i class="far fa-heart text-primary"></i>
             </div>
-            <p class="text-white mb-4">Leidys & Gustavo | 15 de Noviembre, 2025</p>
-            <p class="text-white mb-4">"Que Dios bendiga nuestra unión"</p>
+            <p class="footer-text mb-4">Leidys & Gustavo | 15 de Noviembre, 2025</p>
+            <p class="footer-text mb-4">"Que Dios bendiga nuestra unión"</p>
             <div class="d-flex justify-content-center py-2">
-                <p class="text-white" href="#">gustavo.leidys@gmail.com</p>
-                <span class="px-3">|</span>
-                <p class="text-white" href="#">+58 412-8783627</p>
+                <p class="footer-text" href="#">gustavo.leidys@gmail.com</p>
+                <span class="footer-divider px-3">|</span>
+                <p class="footer-text" href="#">+58 412-8783627</p>
             </div>
-            <p class="m-0">&copy; 2025 Leidys & Gustavo.<br> Diseñado con <i class="far fa-heart text-primary"></i> para nuestro día especial.
+            <p class="footer-text m-0">&copy; 2025 Leidys & Gustavo.<br> Diseñado con <i class="far fa-heart text-primary"></i> para nuestro día especial.
             </p>
         </div>
     </div>
@@ -2120,6 +2351,37 @@
         const songInfo = document.querySelector('.song-info');
         const audioProgress = document.querySelector('.audio-progress');
         const audioButtons = document.querySelector('.audio-buttons');
+
+        // Función para intentar reproducción automática
+        function tryAutoplay() {
+            console.log("Intentando reproducción automática...");
+            
+            // Intentar reproducir
+            const playPromise = audio.play();
+            
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    // Reproducción automática exitosa
+                    console.log("Reproducción automática exitosa");
+                    isPlaying = true;
+                    playButton.classList.remove('fa-play');
+                    playButton.classList.add('fa-pause');
+                }).catch(error => {
+                    // La reproducción automática falló
+                    console.log("Error de reproducción automática:", error);
+                    
+                    // Registrar el clic en el documento para intentar reproducir después
+                    document.addEventListener('click', function autoplayAfterInteraction() {
+                        audio.play();
+                        isPlaying = true;
+                        playButton.classList.remove('fa-play');
+                        playButton.classList.add('fa-pause');
+                        // Eliminar este listener después de usarlo
+                        document.removeEventListener('click', autoplayAfterInteraction);
+                    }, { once: true });
+                });
+            }
+        }
 
         // Función para cargar una canción
         function loadSong(index) {
@@ -2230,13 +2492,23 @@
         // Añadir el evento de scroll
         window.addEventListener('scroll', handleScroll);
 
-        // Cargar la primera canción al iniciar
+        // Cargar la primera canción al iniciar e intentar reproducción automática
         window.addEventListener('load', function() {
             loadSong(currentSongIndex);
             // Inicializar el tiempo actual
             currentTimeDisplay.textContent = "0:00";
             // Verificar el estado inicial del reproductor
             handleScroll();
+            
+            // Intentar reproducción automática después de un breve retraso
+            setTimeout(tryAutoplay, 1000);
+            
+            // Si no funciona la primera vez, intentar de nuevo después de una interacción del usuario
+            setTimeout(function() {
+                if (!isPlaying) {
+                    console.log("Esperando interacción del usuario para reproducir música...");
+                }
+            }, 2000);
         });
 
         // Detener el audio cuando se cambia de página
